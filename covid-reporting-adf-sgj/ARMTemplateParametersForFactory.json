@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covid-reporting-adf-sgj"
+		},
+		"ls_ablob_covidreportingsasgj_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidreportingdlsgj_accountKey": {
+			"value": ""
+		},
+		"ls_sql_covid_db_password": {
+			"value": ""
+		},
+		"ls_adls_covidreportingdlsgj_properties_typeProperties_url": {
+			"value": "https://covidreportingdlsgj.dfs.core.windows.net/"
+		},
+		"ls_http_opendata_ecdc__europa_eu_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"ls_sql_covid_db_properties_typeProperties_server": {
+			"value": "covid-srv-sgj.database.windows.net"
+		},
+		"ls_sql_covid_db_properties_typeProperties_database": {
+			"value": "covid-db-sgj"
+		},
+		"ls_sql_covid_db_properties_typeProperties_userName": {
+			"value": "adminsgj"
+		},
+		"tr_population_data_arrived_properties_typeProperties_scope": {
+			"value": "/subscriptions/20902459-28df-4353-b7c2-6a66f7ed48ac/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingsasgj"
+		}
+	}
+}
